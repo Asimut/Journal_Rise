@@ -34,9 +34,10 @@
   display: flex;
   align-items: center;
 }
-.journalentry-select-two .journalentry-prompt, .journalentry-select-one .journalentry-prompt {
-  flex: 0 0 30%;
-  max-width: 30%;
+.journalentry-select-two .journalentry-prompt, 
+.journalentry-select-one .journalentry-prompt {
+  flex: 0 0 50%;
+  max-width: 50%;
   line-height: 1.1;
 }
 .journalentry-select,.journalentry-response{
@@ -193,6 +194,23 @@ option[disabled] {
   line-height: 28px;
   font-weight: bold;
 }
+@media(max-width:600px){
+  .modal-overaly{
+    padding: 10px;
+  }
+  .modal-book{
+    padding: 10px 5px;
+  }
+
+  .view-book {
+      right: 20px;
+      bottom: 20px;
+      width: 40px;
+      height: 40px;
+      background-size: 25px;
+      background-position: center left 10px;
+  }
+}
 
 
 
@@ -209,8 +227,8 @@ option[disabled] {
 }
 [data-block-id="cl67zkzgk000d356qcnb06n5m"] .block-list__item:first-child,
 [data-block-id="cl67zmiay000p356qzoo54wqv"] .block-list__item:first-child {
-  flex: 0 0 30%;
-  max-width: 30%;
+  flex: 0 0 50%;
+  max-width: 50%;
   
 }
 [data-block-id="cl67zkzgk000d356qcnb06n5m"] .block-list__content,
@@ -227,4 +245,47 @@ option[disabled] {
 }
 .continue-btn:hover {
   background-color: #000!important;
+}
+
+@media(max-width:839px){
+  .journalentry-container {
+      margin-left: 0;
+      width: 100%;
+  }
+}
+@media(max-width:600px){
+
+  [data-block-id="cl67zkzgk000d356qcnb06n5m"] .block-list__item:first-child, 
+  [data-block-id="cl67zmiay000p356qzoo54wqv"] .block-list__item:first-child {
+      flex: 0 0 40%;
+      max-width: 40%;
+      text-align: left;
+      margin-left: 0;
+      margin-right: 0;
+  }
+  .journalentry-select-two .journalentry-prompt, .journalentry-select-one .journalentry-prompt {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  [data-block-id="cl67zkzgk000d356qcnb06n5m"] .block-list__item, [data-block-id="cl67zmiay000p356qzoo54wqv"] .block-list__item {
+      flex: 0 0 102px;
+      max-width: 102px;
+      text-align: center;
+      margin: 0 auto 10px;
+  }
+  .journalentry-select{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  select.journalentry-select {
+    margin-right: auto;
+  }
+  [data-block-id="cl67zkzgk000d356qcnb06n5m"] .block-list__item .fr-view p, 
+  [data-block-id="cl67zmiay000p356qzoo54wqv"] .block-list__item .fr-view p{
+    line-height: 1.1;
+  }
+  [data-block-id="cl67zkzgk000d356qcnb06n5m"] .block-list__list, 
+  [data-block-id="cl67zmiay000p356qzoo54wqv"] .block-list__list{
+    align-items: flex-end;
+  }
 }
